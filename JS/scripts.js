@@ -233,6 +233,20 @@ const showModal = (onePlant) =>{
     
 }
 
+const showLoading = status =>{
+    const loading = document.getElementById('loading');
+
+    if(status === true){
+        loading.classList.remove('hidden');
+        plantsContainer.classList.add('hidden');
+    }
+    
+    else{
+        plantsContainer.classList.remove('hidden');
+        loading.classList.add('hidden');
+    }
+
+}
 
 let sumOfPrices = 0;
 let itemTotal = 0;
